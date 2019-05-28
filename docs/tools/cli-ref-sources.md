@@ -52,4 +52,6 @@ nuget sources Disable -Name "MyServer"
 nuget sources Enable -Name "nuget.org"
 
 nuget sources add -name foo.bar -source C:\NuGet\local -username foo -password bar -StorePasswordInClearText -configfile %AppData%\NuGet\my.config
+
+nuget sources update -name foo.bar -source C:\NuGet\local -username foo -password NewBar -StorePasswordInClearText -configfile %AppData%\NuGet\my.config
 ```
